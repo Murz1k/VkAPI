@@ -11,6 +11,7 @@
     <AssemblyName>VkApi</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -39,8 +42,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Attachment.cs" />
+    <Compile Include="Entities\Audio.cs" />
+    <Compile Include="City.cs" />
+    <Compile Include="Comment.cs" />
+    <Compile Include="Country.cs" />
+    <Compile Include="Entities\Message.cs" />
+    <Compile Include="Entities\Photo.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Like.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="Newsfeed.cs" />
+    <Compile Include="Photos.cs" />
+    <Compile Include="Post.cs" />
+    <Compile Include="Response.cs" />
+    <Compile Include="ResponseException.cs" />
+    <Compile Include="Stats.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="VkApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wall.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
